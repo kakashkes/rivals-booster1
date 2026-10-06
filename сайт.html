@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIVALS — FPS Booster & Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f1015;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+        }
+
+        /* Декоративный фон */
+        .bg-glow {
+            position: absolute;
+            top: -20vh;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 75, 43, 0.25) 0%, rgba(15, 16, 21, 0) 70%);
+            z-index: -1;
+        }
+
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: #ff4b2b;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 75, 43, 0.4);
+        }
+
+        .roblox-badge {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #a0a0ab;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #ffffff 30%, #ff4b2b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            font-size: 18px;
+            color: #9494a0;
+            margin-bottom: 40px;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+
+        /* */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%);
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 18px 45px;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(255, 75, 43, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 75, 43, 0.6);
+            background: linear-gradient(135deg, #ff5e40 0%, #ff4b2b 100%);
+        }
+
+        .download-btn:active {
+            transform: translateY(1px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 25px;
+            border-radius: 14px;
+            text-align: left;
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 75, 43, 0.3);
+        }
+
+        .feature-card h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: #7b7b8a;
+            line-height: 1.4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #555562;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <header>
+        <div class="logo">RIVALS Hub</div>
+        <div class="roblox-badge">ROBLOX GAME</div>
+    </header>
+
+    <div class="main-container">
+        <h1>FPS Booster для RIVALS</h1>
+        <p class="subtitle">Убери лаги, подними кадры в секунду и получи максимальное преимущество в PvP матчах популярного режима Roblox.</p>
+
+        <!-- КНОПКА СКАЧИВАНИЯ (измените href на имя вашего файла или ссылку) -->
+        <a href="YOUR_FILE_NAME.zip" class="download-btn" download>
+            📥 Скачать бустер
+        </a>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>⚡ Больше FPS</h3>
+                <p>Увеличение плавности картинки и устранение микрофризов во время перестрелок.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛡️ Безопасно</h3>
+                <p>Чистая оптимизация системных параметров без риска для игрового аккаунта.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚙️ В один клик</h3>
+                <p>Максимально простой запуск и моментальное применение настроек.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 RIVALS Community.  связано Roblox Corporation.
+    </footer>
+
+</body>
+</html>
